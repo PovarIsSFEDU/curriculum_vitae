@@ -1,15 +1,20 @@
 <template>
   <custom-header></custom-header>
+  <custom-body></custom-body>
+  <custom-footer></custom-footer>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import CustomHeader from "@/components/custom-header";
+import CustomHeader from "@/components/main_parts/custom-header";
+import CustomFooter from "@/components/main_parts/custom-footer";
+import CustomBody from "@/components/main_parts/custom-body";
+
 export default {
   name: 'App',
   components: {
     CustomHeader,
-    // HelloWorld
+    CustomBody,
+    CustomFooter
   }
 }
 </script>
@@ -21,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

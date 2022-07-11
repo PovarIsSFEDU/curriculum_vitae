@@ -1,6 +1,7 @@
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+  <Disclosure as="header" class="bg-gray-800" v-slot="{ open }">
+<!--    max-w-7xl-->
+    <div class=" mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
@@ -11,10 +12,9 @@
             <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true"/>
             <XIcon v-else class="block h-6 w-6" aria-hidden="true"/>
           </DisclosureButton>
-
-
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <!--Photo-logo-->
           <div class="flex-shrink-0 flex items-center">
             <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                  alt="Workflow"/>
