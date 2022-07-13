@@ -2,7 +2,7 @@
   <Disclosure as="header" class="bg-gray-800" v-slot="{ open }">
 <!--    max-w-7xl-->
     <div class=" mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
+      <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
           <!-- Mobile menu button-->
@@ -24,7 +24,7 @@
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
               <a v-for="item in custom_links" :key="item.name" :href="item.link"
-                 :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']"
+                 :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-base font-medium']"
                  :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
             </div>
           </div>

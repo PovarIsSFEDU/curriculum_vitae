@@ -1,7 +1,7 @@
 <template>
   <custom-header></custom-header>
   <custom-body></custom-body>
-  <custom-footer></custom-footer>
+  <custom-footer class="sticky top-[100vh]"></custom-footer>
 </template>
 
 <script>
@@ -21,7 +21,9 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  @apply h-screen;
+  font-family: Poppins, sans-serif;
+  font-size: 16pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
